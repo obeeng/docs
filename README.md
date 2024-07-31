@@ -41,7 +41,7 @@ FQDN to validate. Also note that `spf.apps.myob.com` is just a `CNAME` to
 For Oberon Engineering the `SPF` policy is as follows:
 
 ```
-obeeng.com.au. 	3600 	TXT 	v=spf1 exp=explain._spf.%{d} include:_spf.protonmail.ch include:spf.mandrillapp.com ~all
+obeeng.com.au. 	3600 	TXT 	v=spf1 include:_spf.protonmail.ch include:spf.mandrillapp.com ~all exp=explain._spf.%{d}
 explain._spf.obeeng.com.au. 	14400 	TXT 	Emails from obeeng.com.au must only be sent by authorised mail servers. Call Gary.
 ```
 
