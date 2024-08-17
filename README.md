@@ -56,5 +56,13 @@ Here is a reasonable `DMARC` policy DNS entry configuration:
 _dmarc.obeeng.com.au. 	3600 	TXT 	v=DMARC1;p=reject;sp=reject;adkim=s;aspf=s;pct=100;fo=1;rf=afrf;ri=86400;rua=mailto:c8291de2@in.mailhardener.com;ruf=mailto:c8291de2@in.mailhardener.com
 ```
 
+## DNSSecurityTXT Setup
+
+Ensure a security contact is in the DNS Zone file with the following entry:
+
+```
+_security.obeeng.com.au. 	14400 	TXT 	security_contact=mailto:admin@obeeng.com.au
+```
+
 --
 Author: Edward O'Callaghan.
